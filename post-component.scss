@@ -1,0 +1,15 @@
+.post-component {
+  @extend %post-component;
+
+  &--aside {
+    @extend %post-component--aside;
+  }
+
+  &--center {
+    @extend %post-component--center;
+  }
+
+  &--wide {
+    @extend %post-component--wide;
+  }
+}

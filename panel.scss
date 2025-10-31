@@ -1,0 +1,12 @@
+.panel {
+  --panel-padding-side: #{rem(32)};
+  @include z-index(panel);
+  width: 100%;
+  @include shadow(lg);
+
+  &__title {
+    margin-bottom: rem(16);
+    color: $color-white-190;
+    @extend %font-ui-heading-section-lg;
+  }
+}

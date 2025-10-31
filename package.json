@@ -1,0 +1,69 @@
+{
+  "name": "satellite-dashboard",
+  "version": "1.0.0",
+  "description": "The Satellite Dashboard collects and analyzes space situational awareness data on space object activities of interest creating an enhanced, common understanding of the near-Earth space environment.",
+  "author": "CSIS iDeas Lab",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt -H 0.0.0.0",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:scripts-fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "lint:styles-fix": "stylelint \"./**/*.(scss|vue)\" --fix",
+    "forestry-preview": "nuxt -p 8080 -H 0.0.0.0"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "npm run lint",
+    "*.{css,vue}": "stylelint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "dependencies": {
+    "@a11y-kit/vue-tabs": "^1.0.1",
+    "@nuxtjs/axios": "^5.13.0",
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "frontmatter-markdown-loader": "^3.3.0",
+    "highcharts": "^9.1.2",
+    "highcharts-vue": "^1.4.0",
+    "merge-descriptors": "^1.0.1",
+    "nuxt": "^2.17.2",
+    "satellite.js": "^4.0.0",
+    "vue-cesium": "^2.4.2",
+    "vue-good-table": "^2.21.1",
+    "vue-select": "^3.10.8",
+    "vue-tippy": "^4.7.2",
+    "vue2-datepicker": "^3.8.2"
+  },
+  "devDependencies": {
+    "@nuxtjs/composition-api": "0.24.4",
+    "@nuxtjs/eslint-config": "^2.0.0",
+    "@nuxtjs/eslint-module": "^1.0.0",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/stylelint-module": "^3.1.0",
+    "babel-eslint": "^10.0.1",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-default": "^4.0.7",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "front-matter": "^3.1.0",
+    "html-entities": "^2.1.0",
+    "husky": "^4.0.0",
+    "lint-staged": "^10.0.0",
+    "node-html-parser": "^3.2.0",
+    "postcss-preset-env": "^9.1.1",
+    "prettier": "^1.19.1",
+    "sass": "^1.66.1",
+    "sass-loader": "^10.1.1",
+    "stylelint": "^13.1.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.14.2"
+  }
+}

@@ -1,0 +1,88 @@
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  /* stylelint-disable-next-line */
+  --scrollbar: 0px;
+  font-family: $font__oxygen;
+  background: $color-black-100;
+}
+
+.container {
+  --container-padding: #{rem(16px)};
+  max-width: $size__container-max-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--container-padding);
+  padding-left: var(--container-padding);
+
+  @include breakpoint('medium') {
+    --container-padding: #{rem(32px)};
+  }
+
+  &--full {
+    @include vw100();
+  }
+}
+
+.content-wrapper {
+  max-width: $size__content-max-width;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-layout {
+  background-color: $color-slate-800;
+  background-image: url('~assets/img/page-bg.jpg');
+  background-repeat: no-repeat;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: inherit;
+    border: 0;
+  }
+
+  &:focus {
+    outline: thin solid $color-focus;
+  }
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+:focus {
+  outline: thin solid $color-focus;
+}
+
+// Probably in the future we will need to replace this with: "scrollbar-width: none;"
+// For now this is experimental and is only supported by firefox
+// more info https://www.w3.org/TR/2021/CR-css-scrollbars-1-20211207/
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $color-white-150 transparent;
+
+  &::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-white-150;
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 9999px;
+  }
+}

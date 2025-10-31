@@ -1,24 +1,8 @@
-🛰 SpaceInsight — Satellite Mission Analytics
+# MIDDLEWARE
 
-Overview:
-SpaceInsight is a data analytics dashboard designed to analyze and visualize satellite mission data. The project provides insights into mission performance, cost efficiency, and utilization rates, enabling better decision-making in satellite operations.
+**This directory is not required, you can delete it if you don't want to use it.**
 
-Features:
-Interactive analytics dashboard for satellite missions.
-Visualization of key metrics such as mission success rate, orbital performance, and resource utilization.
-Integration of Python, Power BI, and data visualization tools.
-Data-driven insights for operational planning and efficiency improvement.
+This directory contains your application middleware.
+Middleware let you define custom functions that can be run before rendering either a page or a group of pages.
 
-Tech Stack:
-Python
-Pandas, Matplotlib, Plotly
-Tableau
-CSV/JSON satellite datasets
-
-Applications:
-Business and mission analytics for space agencies.
-Performance monitoring of satellite operations.
-Decision support in aerospace data systems.
-
-Project Link:
-https://github.com/gss2105/SpaceInsight---Satellite-Mission-Analytics
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/routing#middleware).
